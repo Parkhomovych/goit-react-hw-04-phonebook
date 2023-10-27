@@ -20,7 +20,7 @@ export const App = () => {
       return;
     }
     localStorage.setItem('contacts', JSON.stringify(contacts));
-  }, [contacts]);
+  }, [contacts, firstRender]);
 
   const AddContacts = evt => {
     evt.preventDefault();
